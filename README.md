@@ -120,6 +120,26 @@ Enseignant :
 
 ## 4. User Stories avec Critères de Sécurité
 
+### Étape Authentification
+
+#### US0 – Authentification (Login & Logout)
+**En tant qu'utilisateur (étudiant ou enseignant), je veux pouvoir me connecter à la plateforme afin d’accéder à mon espace sécurisé.**
+
+**Critères de performance :**
+- Gestion fluide des erreurs (email/mot de passe incorrect)
+- Redirection selon le rôle (enseignant → dashboard, étudiant → liste des catégories)
+- Session active valide 30 minutes minimum
+
+**Critères de sécurité :**
+- Stockage des mots de passe en hash sécurisé (bcrypt ou Argon2)
+- Protection contre brute force, injection SQL, session hijacking
+- CSRF sur la déconnexion
+- Vérification du rôle après chaque action sensible
+- Sanitization et validation des champs email et mot de passe
+- Cookies sécurisés 
+
+---
+
 ### Enseignant
 
 #### US1 – Créer une catégorie
@@ -171,3 +191,28 @@ Critères de sécurité :
 - Je veux voir l'historique de mes scores
 - Pas d'accès aux résultats des autres
 
+
+#### Structure des fichiers
+qodex/
+├── config/
+│   └── database.php
+├── includes/
+│   ├── header.php
+│   └── footer.php
+├── auth/
+│   ├── login.php
+│   └── register.php
+├── enseignant/
+│   ├── dashboard.php
+│   ├── add_quiz.php
+│   ├── manage_quizzes.php
+│   ├── add_question.php
+│   ├── view_results.php
+│   └── statistics.php
+├── etudiant/
+│   ├── dashboard.php
+│   ├── available_quizzes.php
+│   ├── take_quiz.php
+│   ├── submit_quiz.php
+│   └── my_results.php
+└── logout.php
