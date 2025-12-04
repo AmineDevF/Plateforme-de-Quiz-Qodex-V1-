@@ -192,7 +192,9 @@ Critères de sécurité :
 - Pas d'accès aux résultats des autres
 
 
-#### Structure des fichiers
+# Structure des fichiers
+
+```
 qodex/
 ├── config/
 │   └── database.php
@@ -216,3 +218,6 @@ qodex/
 │   ├── submit_quiz.php
 │   └── my_results.php
 └── logout.php
+```
+
+
