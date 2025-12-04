@@ -148,7 +148,7 @@ Critères de sécurité :
 Critères de sécurité :
 - Accès limité aux quiz de l’enseignant
 - Aucun mot de passe exposé
-- Pagination
+- Pagination (Bonus)
 
 ### Étudiant
 
@@ -168,4 +168,6 @@ Critères de sécurité :
 #### US7 – Voir ses résultats
 Critères de sécurité :
 - Accès uniquement à ses propres résultats
+- Je veux voir l'historique de mes scores
+- Pas d'accès aux résultats des autres
 
