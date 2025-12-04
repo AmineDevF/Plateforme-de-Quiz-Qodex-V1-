@@ -71,32 +71,32 @@ Objectif principal : créer une mini plateforme de quiz sécurisée où un ensei
 
 ---
 
-## 3. Fonctionnalités (Planning sur 7 jours)
+## 3. Fonctionnalités 
 
-### Jours 1–2 : Authentification Sécurisée
+### Authentification Sécurisée
 - Inscription : validation email, mot de passe, hashage, CSRF, email unique
 - Connexion : vérification credentials, régénération ID session, mise à jour last_login
 - Déconnexion : destruction complète de la session
 
-### Jour 3 : CRUD Catégories (Enseignant)
+### CRUD Catégories (Enseignant)
 - Create : nom + description, validation, sanitization
 - Read : afficher les catégories
 - Update : vérifier propriétaire
 - Delete : vérifier quiz associés, soft delete optionnel
 
-### Jour 4 : CRUD Quiz (Enseignant)
+### CRUD Quiz (Enseignant)
 - Create : titre, description, catégorie, minimum 1 question
 - Read : liste des quiz, détail, filtres
 - Update : modifier infos, ajouter/modifier/supprimer questions
 - Delete : suppression quiz + questions, gestion résultats
 
-### Jour 5 : CRUD Questions (Enseignant)
+### CRUD Questions (Enseignant)
 - Create : question + 4 options + réponse correcte
 - Read : afficher questions d’un quiz
 - Update : texte/options
 - Delete : suppression
 
-### Jour 6 : Passage Quiz & Résultats (Étudiant)
+### Passage Quiz & Résultats (Étudiant) (Bonus)
 Étudiant :
 - Voir catégories
 - Voir quiz par catégorie
@@ -110,7 +110,7 @@ Enseignant :
 - Filtrer par quiz ou par étudiant
 - Statistiques simples
 
-### Jour 7 : Finalisation et Tests
+### Finalisation et Tests
 - Revue sécurité
 - Tests de validation et permissions
 - Documentation
@@ -150,7 +150,7 @@ Critères de sécurité :
 - Aucun mot de passe exposé
 - Pagination (Bonus)
 
-### Étudiant
+### Étudiant (Bonus)
 
 #### US5 – Voir les catégories
 Critères de sécurité :
