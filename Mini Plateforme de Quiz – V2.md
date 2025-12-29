@@ -32,7 +32,7 @@ Toute l’application repose sur :
 
 ## 3. Modèle Objet – Classes OOP (Focus Étudiant)
 
-### User (Étudiant uniquement)
+### User 
 
 Représente un utilisateur étudiant authentifié.
 
@@ -40,7 +40,7 @@ Représente un utilisateur étudiant authentifié.
 - nom  
 - email  
 - password_hash  
-- role (valeur fixe : `student`)  
+- role ( `student`)  
 - created_at  
 
 ---
