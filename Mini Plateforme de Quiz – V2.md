@@ -249,3 +249,4 @@ Contraintes de sécurité :
 - Blocage définitif des re-tentatives  
 - Classe `ScoreService`  
 - Statistiques personnelles simples  
+
